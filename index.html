@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <div class="text-center bg-orange-400 w-9/12 mx-auto p-12 mt-20">
+            <h1 class="text-3xl text-white font-semibold">Amar Baaper Bank</h1>
+            <input class="block w-9/12 mx-auto mt-4 rounded-lg px-2" type="email" name="" id="input-email">
+            <input class="block w-9/12 mx-auto mt-4 mb-5 rounded-lg px-2" type="password" name="" id="input-password">
+            <button onclick="loginPage()" class="px-4 py-2 rounded-lg text-white bg-green-600">Submit</button>
+        </div>
+    </main>
+    <script>
+        function loginPage() {
+            const inputEmailField = document.getElementById('input-email');
+            const inputEmail = inputEmailField.value;
+            const inputPasswordField = document.getElementById('input-password');
+            const inputPassword = inputPasswordField.value;
+
+            if (inputEmail === 'rahim@gmail' && inputPassword === "12321") {
+                // window.location.href('bank.html');
+                window.location.href = 'bank.html';
+                // console.log(inputEmail, inputPassword);
+            }
+            else{
+                alert ('Wrong information');
+            }
+        }
+    </script>
+</body>
+
+</html>
